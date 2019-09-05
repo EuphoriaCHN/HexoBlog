@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Oracle,教学总结,数据库,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+<meta name="keywords" content="Oracle,教学总结,数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle数据库实用教程_第一章">
+<meta property="og:url" content="http://www.wqh4u.cn/2019/08/26/Oracle数据库实用教程-第一章/index.html">
+<meta property="og:site_name" content="Euphoria Blog">
+<meta property="og:description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-01T07:03:52.452Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Oracle数据库实用教程_第一章">
+<meta name="twitter:description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.wqh4u.cn/2019/08/26/Oracle数据库实用教程-第一章/">
+
+
+
+
+
+  <title>Oracle数据库实用教程_第一章 | Euphoria Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+
+
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/EuphoriaCHN" class="github-corner" aria-label="View source on GitHub">
+        <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+        </svg>
+    </a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Euphoria Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Euphoria is Coding Now</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.wqh4u.cn/2019/08/26/Oracle数据库实用教程-第一章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Euphoria">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Euphoria Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Oracle数据库实用教程_第一章</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-26T17:39:00+08:00">
+                2019-08-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Oracle/" itemprop="url" rel="index">
+                    <span itemprop="name">Oracle</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Oracle/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,230 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <style type="text/css">
+.redspan {
+    color: red;
+}
+.quotetitle {
+    color: #337ab7;
+    font-weight: 700;
+}
+.purpletitle {
+    color: #9954bb;
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+.markbutton {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.bgblue {
+    background-color: #337ab7;
+}
+.bgpurple {
+    background-color: #9954bb;
+}
+.bgred {
+    background-color: red;
+}
+td {
+    text-align: center;
+    vertical-align: bottom;
+}
+td, th {
+    border: 2px solid white;
+    font-size: 18px;
+}
+th {
+    background-color: #337ab7;
+    color: white;
+}
+</style>
+
+<blockquote>
+<p><span class="redspan">真正的才智是刚毅的志向。</span><br>本系列博客将对大三阶段所学 <code>Oracle数据库实用教程</code> 做一个完整的笔记，以备日后查询或复习知识点所用。<br>所用到的书籍为 <a href="http://product.dangdang.com/1425268318.html" target="_blank" rel="noopener">清华大学出版社 Oracle数据库实用教程 岳国华 编著</a>。</p>
+</blockquote>
+<a id="more"></a>
+
+<hr>
+
+<h2 id="第一章-关系数据库概述与-Oracle-安装"><a href="#第一章-关系数据库概述与-Oracle-安装" class="headerlink" title="第一章. 关系数据库概述与 Oracle 安装"></a>第一章. 关系数据库概述与 <code>Oracle</code> 安装</h2><h3 id="关系数据库概论"><a href="#关系数据库概论" class="headerlink" title="关系数据库概论"></a>关系数据库概论</h3><blockquote>
+<p>数据是 <span class="quotetitle">事实或观察的结果</span>，<span class="quotetitle">是对客观事物的逻辑归纳</span>，<span class="quotetitle">是用于表示客观事物的未经加工的原始素材。</span></p>
+</blockquote>
+<h4 id="数据管理大致经历了三个阶段："><a href="#数据管理大致经历了三个阶段：" class="headerlink" title=" 数据管理大致经历了三个阶段："></a><i class="fa fa-angle-double-right"></i> 数据管理大致经历了三个阶段：<br></h4><ol>
+<li><i class="fa fa-address-card-o"></i>&nbsp;人工管理阶段</li>
+<li><i class="fa fa-file-o"></i>&nbsp;文件管理阶段</li>
+<li><i class="fa fa-floppy-o"></i>&nbsp;数据库管理阶段</li>
+</ol>
+<h4 id="关系数据库完整性约束"><a href="#关系数据库完整性约束" class="headerlink" title=" 关系数据库完整性约束"></a><i class="fa fa-angle-double-right"></i> 关系数据库<a name="italic_quotetitle">完整性约束</a></h4><ul>
+<li><span class="quotetitle">实体完整性</span>：主键字段值不能重复也不能为空；</li>
+<li><span class="quotetitle">域完整性</span>：每一个字段（列）值域的完整性；</li>
+<li><span class="quotetitle">参照完整性</span>：表的外键约束；</li>
+<li><span class="quotetitle">用户自定义完整性</span>：<code>CHECK IN</code> 等等用户自定义的针对主外键字段的取值做出必须有效的约束。</li>
+</ul>
+<h4 id="SQL-语言概述"><a href="#SQL-语言概述" class="headerlink" title=" SQL 语言概述"></a><i class="fa fa-angle-double-right"></i> <code>SQL</code> 语言概述</h4><p><a name="SQL"> <code>SQL</code> (Structured Query Language, 结构化查询语言)</a> 是一种 <span class="markbutton bgblue">数据查询和数据操作编程用程序设计语言</span>，用于查询、更新和管理关系数据库中的数据，为 <code>RDBMS</code> 广泛支持。<br>标准的 <code>SQL</code> 语言由 4 个部分组成：</p>
+<ul>
+<li><a name="DDL">数据定义语言 (Data Definition Language, DDL) </a>。用于定义和管理数据库以及数据库中的各种对象，比如 <code>CREATE</code>、<code>ALTER</code>、<code>DROP</code> 等操作；</li>
+<li><a name="DML">数据操纵语言 (Data Definition Language, DDL) </a>。用于对数据库中存储的数据进行 <code>INSERT</code>、<code>UPDATE</code>、<code>DELETE</code> 等操作；</li>
+<li><a name="DQL">数据查询语言 (Data Query Language, DQL) </a>。用于对数据库中存储的数据执行各种查询操作，主要是 <code>SELECT</code> 命令；</li>
+<li><a name="DQL">数据查询语言 (Data Control Language, DCL) </a>。用于再数据库中授予或回收对某对象的相关访问权限、控制数据库操纵事务发生的时间及效果，对数据库实行监视等。 <code>DCL</code> 语言通常包括 <code>COMMIT</code>、<code>ROLLBACK</code>、<code>SAVEPOINT</code>、<code>GRANT</code>、<code>REVOKE</code> 等语句。</li>
+</ul>
+<hr>
+
+<h3 id="数据库设计与规范化"><a href="#数据库设计与规范化" class="headerlink" title="数据库设计与规范化"></a>数据库设计与规范化</h3><h4 id="数据库设计的具体步骤"><a href="#数据库设计的具体步骤" class="headerlink" title=" 数据库设计的具体步骤"></a><i class="fa fa-angle-double-right"></i> 数据库设计的具体步骤</h4><ol>
+<li>数据需求调研</li>
+<li>数据需求分析</li>
+<li>概念设计</li>
+<li>逻辑结构设计</li>
+<li>优化数据库结构</li>
+<li>物理结构设计</li>
+</ol>
+<h4 id="数据库设计范式理论（1NF-3NF）"><a href="#数据库设计范式理论（1NF-3NF）" class="headerlink" title=" 数据库设计范式理论（1NF ~ 3NF）"></a><i class="fa fa-angle-double-right"></i> 数据库设计范式理论（1NF ~ 3NF）</h4><ol>
+<li>第一范式（1NF）<blockquote>
+<p>I. 表中的每一列都是不可分割的基本数据项，任一列都不能再分。<br>II. 表中不能出现重复的列。<br>III. 表中的一行只包含一个实体的全部属性信息。</p>
+</blockquote>
+</li>
+<li>第二范式（2NF）<blockquote>
+<p>I. 表中的任意一行必须被唯一地区分。<br>II. 第二范式要求实体的所有非主键属性必须完全依赖于主属性，不能出现部份依赖。</p>
+</blockquote>
+</li>
+<li>第三范式（3NF）<blockquote>
+<p>I. 一个表中不能包含已在其它表中包含的非主关键字段。<br>II. 表中的非主关键字段都应该直接依赖于主关键字，不能出现传递依赖。</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="实体和实体之间的关系"><a href="#实体和实体之间的关系" class="headerlink" title=" 实体和实体之间的关系"></a><i class="fa fa-angle-double-right"></i> 实体和实体之间的关系</h4><ul>
+<li><a name="identifying-relationship">标识型关系（Identifying Relationship）</a>：父实体主键是子实体中的主键和外键；</li>
+<li><a name="non-identifying-Relationship">非标识型关系（Non-identifying Relationship）</a>：父实体主键是子实体中的外键；</li>
+<li><a name="subtype-relationship">分类关系（Subtype Relationship）</a>：父实体的主键分别是多个分类子实体中的外键；</li>
+<li><a name="recursive-relationship">递归关系（Recursive Relationship）</a>：一个实体的非主键属性的取值受主键属性值的约束；</li>
+<li><a name="many-to-many-relationship">多对多关系（Many-to-many Relationship）</a>：两个实体间是多对多的关系。</li>
+</ul>
+<h4 id="数据模型"><a href="#数据模型" class="headerlink" title=" 数据模型"></a><i class="fa fa-angle-double-right"></i> 数据模型</h4><ol>
+<li><a name="conceptual-data-model">概念数据模型（Conceptual Data Model, CDM）</a>：表现数据库的全部逻辑结构，与任何的原件或数据存储结构无关。一个概念模型经常包括在物理数据库中仍然不实现的数据对象。</li>
+<li><a name="physical-data-model">物理数据模型（Physical Data Model, PDM）</a>：设计数据库的物理实现，从 <code>PDM</code> 的角度看，它考虑真实的物理实现的细节。</li>
+</ol>
+<hr>
+
+<h3 id="Oracle-数据库介绍"><a href="#Oracle-数据库介绍" class="headerlink" title="Oracle 数据库介绍"></a><code>Oracle</code> 数据库介绍</h3><p><code>Oracle</code> 是一种 <a name="relational-database-management-system">RDBMS（Relational Database Management System，关系数据库管理系统）</a>，是 <code>Oracle</code> 公司的核心产品，目前在市场上占有大量的份额。</p>
+<h4 id="Oracle-数据库的安装"><a href="#Oracle-数据库的安装" class="headerlink" title=" Oracle 数据库的安装"></a><i class="fa fa-angle-double-right"></i> <code>Oracle</code> 数据库的安装</h4><p><a href="https://blog.csdn.net/pancheng1984/article/details/79823467" target="_blank" rel="noopener">windows本地 Oracle 11g安装完整教程</a></p>
+<hr>
+
+<h3 id="常用英汉对照"><a href="#常用英汉对照" class="headerlink" title="常用英汉对照"></a>常用英汉对照</h3><div>
+<table style="margin: 0 auto;">
+    <tr>
+        <th>英语</th>
+        <th>缩写</th>
+        <th>汉语</th>
+    </tr>
+    <tr>
+        <td>Information Management System</td>
+        <td class="italic quotetitle">IMS</td>
+        <td>信息管理系统</td>
+    </tr>
+    <tr>
+        <td>Integrity Constraint</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#italic_quotetitle">完整性约束</a></td>
+    </tr>
+    <tr>
+        <td>Structured Query Language</td>
+        <td class="italic quotetitle">SQL</td>
+        <td><a href="#SQL">结构化查询语言</a></td>
+    </tr>
+    <tr>
+        <td>Data Defination Language</td>
+        <td class="italic quotetitle">DDL</td>
+        <td><a href="#DDL">数据定义语言</a></td>
+    </tr>
+    <tr>
+        <td>Data Manipulation Language</td>
+        <td class="italic quotetitle">DML</td>
+        <td><a href="#DML">数据操纵语言</a></td>
+    </tr>
+    <tr>
+        <td>Data Query Language</td>
+        <td class="italic quotetitle">DQL</td>
+        <td><a href="#DQL">数据查询语言</a></td>
+    </tr>
+    <tr>
+        <td>Data Control Language</td>
+        <td class="italic quotetitle">DCL</td>
+        <td><a href="#DCL">数据控制语言</a></td>
+    </tr>
+    <tr>
+        <td>Identifying Relationship</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#identifying-relationship">标识型关系</a></td>
+    </tr>
+    <tr>
+        <td>Non-identifying Relationship</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#non-identifying-relationship">非标识型关系</a></td>
+    </tr>
+    <tr>
+        <td>Subtype Relationship</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#subtype-relationship">分类关系</a></td>
+    </tr>
+    <tr>
+        <td>Recursive Relationship</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#recursive-relationship">递归关系</a></td>
+    </tr>
+    <tr>
+        <td>Many-to-many Relationship</td>
+        <td class="italic quotetitle"></td>
+        <td><a href="#many-to-many-relationship">多对多关系</a></td>
+    </tr>
+    <tr>
+        <td>Conceptual Data Model</td>
+        <td class="italic quotetitle">CDM</td>
+        <td><a href="#conceptual-data-model">概念数据模型</a></td>
+    </tr>
+    <tr>
+        <td>Physical Data Model</td>
+        <td class="italic quotetitle">PDM</td>
+        <td><a href="#physical-data-model">物理数据模型</a></td>
+    </tr>
+    <tr>
+        <td>Relational Database Management System</td>
+        <td class="italic quotetitle">RDBMS</td>
+        <td><a href="#relational-database-management-system">关系数据库管理系统</a></td>
+    </tr>
+</table>
+</div>
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 <i class="fa fa-paw"></i> Euphoria 在此感谢您的阅读-------------</div>
+    
+</div>
+
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/08/26/Oracle数据库实用教程-第一章/">Oracle数据库实用教程_第一章</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Euphoria 的个人博客">Euphoria</a></p>
+  <p><span>发布时间:</span>2019年08月26日 - 17:39</p>
+  <p><span>最后更新:</span>2019年09月01日 - 15:03</p>
+  <p><span>原始链接:</span><a href="/2019/08/26/Oracle数据库实用教程-第一章/" title="Oracle数据库实用教程_第一章">http://www.wqh4u.cn/2019/08/26/Oracle数据库实用教程-第一章/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wqh4u.cn/2019/08/26/Oracle数据库实用教程-第一章/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+
+      
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持将鼓励 Euphoria 继续创作！（如果你还是学生请千万不要打赏，留点钱在学习上啊！）</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.png" alt="Euphoria 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="Euphoria 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Oracle/" rel="tag"><i class="fa fa-tag"></i> Oracle</a>
+          
+            <a href="/tags/教学总结/" rel="tag"><i class="fa fa-tag"></i> 教学总结</a>
+          
+            <a href="/tags/数据库/" rel="tag"><i class="fa fa-tag"></i> 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/31/Hexo博客的安装与基本配置/" rel="next" title="Hexo博客的安装与基本配置">
+                <i class="fa fa-chevron-left"></i> Hexo博客的安装与基本配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/28/UML图例详解/" rel="prev" title="UML图例详解">
+                UML图例详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="Euphoria">
+            
+              <p class="site-author-name" itemprop="name">Euphoria</p>
+              <p class="site-description motion-element" itemprop="description">我摸到了梦，也看到了光</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/EuphoriaCHN" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="euphoria.wqh@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/weixin_41570565" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-globe"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-关系数据库概述与-Oracle-安装"><span class="nav-number">1.</span> <span class="nav-text">第一章. 关系数据库概述与 Oracle 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关系数据库概论"><span class="nav-number">1.1.</span> <span class="nav-text">关系数据库概论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据管理大致经历了三个阶段："><span class="nav-number">1.1.1.</span> <span class="nav-text"> 数据管理大致经历了三个阶段：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关系数据库完整性约束"><span class="nav-number">1.1.2.</span> <span class="nav-text"> 关系数据库完整性约束</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL-语言概述"><span class="nav-number">1.1.3.</span> <span class="nav-text"> SQL 语言概述</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库设计与规范化"><span class="nav-number">1.2.</span> <span class="nav-text">数据库设计与规范化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库设计的具体步骤"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 数据库设计的具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库设计范式理论（1NF-3NF）"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 数据库设计范式理论（1NF ~ 3NF）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实体和实体之间的关系"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 实体和实体之间的关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据模型"><span class="nav-number">1.2.4.</span> <span class="nav-text"> 数据模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Oracle-数据库介绍"><span class="nav-number">1.3.</span> <span class="nav-text">Oracle 数据库介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Oracle-数据库的安装"><span class="nav-number">1.3.1.</span> <span class="nav-text"> Oracle 数据库的安装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用英汉对照"><span class="nav-number">1.4.</span> <span class="nav-text">常用英汉对照</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Euphoria</span>
+
+  
+    
+    <br>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+     <span class="post-meta-item-text">博客全站共&#58;</span>
+    
+    <span title="Site words total count">
+    10.6k 字
+    </span>
+  
+</div>
+
+<!--
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共 10.6k 字</span>
+</div>
+-->
+
+<!--
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  <script src="/live2d-widget/autoload.js"></script>
+</body>
+</html>

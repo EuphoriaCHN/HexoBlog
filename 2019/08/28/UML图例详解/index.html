@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="设计模式,UML,软件工程,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+<meta name="keywords" content="设计模式,UML,软件工程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UML图例详解">
+<meta property="og:url" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/index.html">
+<meta property="og:site_name" content="Euphoria Blog">
+<meta property="og:description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/UML_yongli.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/UML_shixu.jpg">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/shengmingxian.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/tongbuxiaoxi.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/yibuxiaoxi.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/zhushi.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/yueshu.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/generalization.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/implements.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/association.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/aggregation.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/composition.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/dependency.png">
+<meta property="og:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/group.png">
+<meta property="og:updated_time" content="2019-09-01T07:03:45.324Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UML图例详解">
+<meta name="twitter:description" content=".redspan {     color: red; } .quotetitle {     color: #337ab7;     font-weight: 700; } .purpletitle {     color: #9954bb;     font-weight: 700; } .italic {     font-style: italic; } .markbutton {">
+<meta name="twitter:image" content="http://www.wqh4u.cn/2019/08/28/UML图例详解/UML_yongli.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.wqh4u.cn/2019/08/28/UML图例详解/">
+
+
+
+
+
+  <title>UML图例详解 | Euphoria Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+
+
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/EuphoriaCHN" class="github-corner" aria-label="View source on GitHub">
+        <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+        </svg>
+    </a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Euphoria Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Euphoria is Coding Now</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.wqh4u.cn/2019/08/28/UML图例详解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Euphoria">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Euphoria Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">UML图例详解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-28T16:13:57+08:00">
+                2019-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/软件工程/" itemprop="url" rel="index">
+                    <span itemprop="name">软件工程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,493 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <style type="text/css">
+.redspan {
+    color: red;
+}
+.quotetitle {
+    color: #337ab7;
+    font-weight: 700;
+}
+.purpletitle {
+    color: #9954bb;
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+.markbutton {
+    padding: 3px 5px;
+    margin: 0 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.bgblue {
+    background-color: #337ab7;
+}
+.bgpurple {
+    background-color: #9954bb;
+}
+.bgred {
+    background-color: red;
+}
+td {
+    text-align: center;
+    vertical-align: bottom;
+}
+td, th {
+    border: 2px solid white;
+    font-size: 18px;
+}
+th {
+    background-color: #337ab7;
+    color: white;
+}
+.image-display {
+    text-align: center;
+    font-size: 16px;
+}
+.image-display img {
+    padding-bottom: 8px;
+}
+.code {
+    text-align: left;
+}
+</style>
+
+<blockquote>
+<p><span class="redspan">志向和热爱是伟大行为的双翼。</span><br><a name="UML">UML（Unified Modeling Language）</a>是一种统一建模语言，为面向对象开发系统的产品进行说明、可视化、和编制文档的一种标准语言。<br>在这里将介绍 <code>UML</code> 基本概念以及各个图的使用场景。</p>
+</blockquote>
+<a id="more"></a>
+
+<hr>
+
+<h2 id="UML-图例详解"><a href="#UML-图例详解" class="headerlink" title="UML 图例详解"></a><code>UML</code> 图例详解</h2><p><code>UML</code> 分为用例视图、设计视图、进程视图、实现视图和拓扑视图，又可以静动分为静态视图和动态视图。静态图分为：用例图，类图，对象图，包图，构件图，部署图。动态图分为：状态图，活动图，协作图，序列图。</p>
+<h3 id="用例图（UseCase-Diagrams）"><a href="#用例图（UseCase-Diagrams）" class="headerlink" title="  用例图（UseCase Diagrams）"></a><i class="fa fa-angle-double-right"></i> <a name="usecase-diagrams"> 用例图（UseCase Diagrams）</a></h3><blockquote>
+<p>用例是目标系统<a name="business-process">业务过程（Business Process）</a>的抽象，由<a name="actor">参与者（Actor）</a>与系统的交互步骤（或事件）组成，参与者通过用例完成具体的业务目标。<br>即：用例图主要回答了两个问题：<br>1. <span class="markbutton bgpurple">是谁用软件</span><br>2. <span class="markbutton bgpurple">软件的功能</span><br>从用户的角度描述了系统的功能，并指出各个功能的执行者，强调用户的使用者，系统为执行者完成哪些功能。</p>
+</blockquote>
+<p><span class="markbutton bgblue">系统用例模型</span>通过 <code>UML</code> 用例图进行可视化。<code>UML</code> 用例图基本符号有 <span class="markbutton bgpurple">用例（椭圆形标识）、参与者（人性标识）、系统边界（矩形标识）、关联（直线标识）</span>。<br></p>
+<ul>
+<li><p>如图 <code>1.1</code> 所示：</p>
+  <div class="image-display">
+      <img src="./UML_yongli.png" alt="UML用例图">
+      <br>图1.1&nbsp;&nbsp;&nbsp;&nbsp;UML用例图基本符号
+  </div>
+
+</li>
+</ul>
+<p><span class="markbutton bgblue">用例建模</span> 是面向对象软件分析的重要技术和方法，开发人员在实用用例图进行用例模型可视化时需要<span class="markbutton bgred">注意如下事项</span>：</p>
+<ol>
+    <li>用例图无法可视化非交互或非功能性的系统需求；</li>
+    <li>用例的定义没有统一标准；</li>
+    <li>复杂系统用例模型的全局可视化可能会降低用例图的可用性等。</li>
+</ol>
+
+<hr>
+
+<h3 id="序列图-时序图（Sequence-Diagrams）"><a href="#序列图-时序图（Sequence-Diagrams）" class="headerlink" title="  序列图-时序图（Sequence Diagrams）"></a><i class="fa fa-angle-double-right"></i> <a name="sequence-diagrams"> 序列图-时序图（Sequence Diagrams）</a></h3><blockquote>
+<p><span class="markbutton bgblue">UML时序图</span>通过对象、消息、交互顺序等方式可视化软件业务过程中的控制流或数据流。</p>
+</blockquote>
+<p><span class="markbutton bgblue">时序图</span>中的对象通过发送消息和接受消息进行交互，消息具有先后顺序。UML时序图基本符号有<span class="markbutton bgpurple">对象、消息、对象生命线、消息组合片段、终止符号等</span>。</p>
+<ul>
+<li><p>时序图如图 <code>1.2</code> 所示：</p>
+  <div class="image-display">
+      <img src="./UML_shixu.jpg" alt="UML时序图">
+      <br>图1.2&nbsp;&nbsp;&nbsp;&nbsp;UML时序图基本符号
+  </div>
+
+</li>
+</ul>
+<blockquote>
+<p><span class="markbutton bgblue">消息</span>用从一个对象的生命线到另一个对象生命线的箭头表示。<br><br>箭头以<span class="markbutton bgblue">时间顺序</span>在图中从上到下排列。<br><br></p>
+</blockquote>
+<h4 id="生命线"><a href="#生命线" class="headerlink" title=" 生命线"></a><i class="fa fa-angle-right"></i> 生命线</h4><blockquote>
+<p>生命线名称可带下划线。当使用下划线时，意味着序列图中的生命线代表一个类的特定实例。</p>
+</blockquote>
+<ul>
+<li><p>生命线如图 <code>1.3</code> 所示：</p>
+  <div class="image-display">
+      <img src="./shengmingxian.png" alt="生命线">
+      <br>图1.3&nbsp;&nbsp;&nbsp;&nbsp;生命线
+  </div>
+
+</li>
+</ul>
+<h4 id="同步消息"><a href="#同步消息" class="headerlink" title=" 同步消息"></a><i class="fa fa-angle-right"></i> 同步消息</h4><blockquote>
+<p>同步等待消息。</p>
+</blockquote>
+<ul>
+<li><p>同步消息如图 <code>1.4</code> 所示：</p>
+  <div class="image-display">
+      <img src="./tongbuxiaoxi.png" alt="同步消息">
+      <br>图1.4&nbsp;&nbsp;&nbsp;&nbsp;同步消息
+  </div>
+
+</li>
+</ul>
+<h4 id="异步消息"><a href="#异步消息" class="headerlink" title=" 异步消息"></a><i class="fa fa-angle-right"></i> 异步消息</h4><blockquote>
+<p>异步发送消息，不需等待。</p>
+</blockquote>
+<ul>
+<li><p>异步消息如图 <code>1.5</code> 所示：</p>
+  <div class="image-display">
+      <img src="./yibuxiaoxi.png" alt="异步消息">
+      <br>图1.5&nbsp;&nbsp;&nbsp;&nbsp;异步消息
+  </div>
+
+</li>
+</ul>
+<h4 id="注释"><a href="#注释" class="headerlink" title=" 注释"></a><i class="fa fa-angle-right"></i> 注释</h4><ul>
+<li><p>注释如图 <code>1.6</code> 所示：</p>
+  <div class="image-display">
+      <img src="./zhushi.png" alt="注释">
+      <br>图1.6&nbsp;&nbsp;&nbsp;&nbsp;注释
+  </div>
+
+</li>
+</ul>
+<h4 id="约束"><a href="#约束" class="headerlink" title=" 约束"></a><i class="fa fa-angle-right"></i> 约束</h4><ul>
+<li><p>约束如图 <code>1.7</code> 所示：</p>
+  <div class="image-display">
+      <img src="./yueshu.png" alt="约束">
+      <br>图1.7&nbsp;&nbsp;&nbsp;&nbsp;约束
+  </div>
+
+</li>
+</ul>
+<h4 id="组合"><a href="#组合" class="headerlink" title=" 组合"></a><i class="fa fa-angle-right"></i> 组合</h4><blockquote>
+<p><span class="markbutton bgblue">组合片段用来解决交互执行的条件及方式。</span><br>它允许在序列图中直接表示逻辑组件，用于通过指定条件或子进程的应用区域，为任何生命线的任何部分定义特殊条件和子进程。<br>常用的组合片段有：<span class="markbutton bgpurple">抉择、选项、循环、并行</span>。</p>
+</blockquote>
+<p>使用<span class="markbutton bgblue">时序图</span> 进行对象交互模型可视化时，需要<span class="markbutton bgred">注意如下事项</span>：</p>
+<ol>
+    <li>消息类型有同步消息、异步消息、返回消息、自关联消息等；</li>
+    <li>如果需要在时序图中标注对象生命周期的终止，可以使用终止符号；</li>
+    <li>可以对时序图标注<a name="type">对象类型（Type）</a>和<a name="stereotype">构造类型（Stereotype）</a>；</li>
+    <li>当系统内部对象需要和系统外部环境交互时，可以将外部环境（第三方系统或用户）标注为对象。</li>
+</ol>
+
+<hr>
+
+<h3 id="类图（Class-Diagrams）"><a href="#类图（Class-Diagrams）" class="headerlink" title=" 类图（Class Diagrams）"></a><i class="fa fa-angle-double-right"></i> <a name="class-diagrams">类图（Class Diagrams）</a></h3><blockquote>
+<p><strong>类是面向对象软件分析和设计的核心目标。</strong><br>定义了静态代码逻辑，是软件内部的<a name="generalization">泛化（Generalization）</a>类型；对象是类的实例；类的关联是对象写作逻辑的静态表示。<br><span class="markbutton bgblue">采用面向对象方法实施软件编码活动的本质是定义类。</span></p>
+</blockquote>
+<p>用户根据用例图抽象成类，描述类的内部结构和类与类之间的关系，是一种静态结构图。<br> 在UML类图中，常见的有以下几种关系: </p>
+<ul>
+<li><a name="generalization-inheritance">泛化/继承（Generalization / Inheritance）</a></li>
+<li><a name="realization">实现（Realization）</a></li>
+<li><a name="association">关联（Association)</a></li>
+<li><a name="aggregation">聚合（Aggregation）</a></li>
+<li><a name="composition">组合（Composition）</a></li>
+<li><a name="dependency">依赖（Dependency）</a></li>
+</ul>
+<blockquote>
+<p><strong>类图不仅可以用于呈现需求的业务领域，也可以用于表达逻辑代码的设计模型。</strong></p>
+</blockquote>
+<p>各种关系的强弱顺序： 泛化（继承） = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖</p>
+<h3 id="泛化（继承）"><a href="#泛化（继承）" class="headerlink" title=" 泛化（继承）"></a><i class="fa fa-angle-right"></i> 泛化（继承）</h3><blockquote>
+<p><code>【泛化关系】</code>：是一种继承关系，表示一般与特殊的关系，它指定了子类如何继承父类的所有特征和行为。<br><br>例如：<code>学生（Student）</code> 也同样是 <code>人（Person）</code>，即有学生的特性也有人类的共性。</p>
+</blockquote>
+<div class="image-display">
+    <img src="./generalization.png" alt="泛化">
+    <br>泛化（继承）
+</div>
+
+<br>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义 Person 类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name, <span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"&#123;Name: "</span> + <span class="keyword">this</span>.name + <span class="string">", Age: "</span> + <span class="keyword">this</span>.age + <span class="string">"&#125;\n"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义 Student 类，继承 Person 类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String studentID;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name, <span class="keyword">int</span> age, String studentID)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(name, age);</span><br><span class="line">        <span class="keyword">this</span>.studentID = studentID;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.toString() + <span class="string">"&#123;Student ID: "</span> + <span class="keyword">this</span>.studentID + <span class="string">"&#125;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实现"><a href="#实现" class="headerlink" title=" 实现"></a><i class="fa fa-angle-right"></i> 实现</h3><blockquote>
+<p><code>【实现关系】</code>：是一种类与接口的关系，表示类是接口所有特征和行为的实现。</p>
+</blockquote>
+<div class="image-display">
+    <img src="./implements.png" alt="泛化">
+    <br>实现
+</div>
+
+<br>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义动作接口 Action</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Action</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Running</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Sleeping</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义 Animals 类，实现动作接口 Action</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animals</span> <span class="keyword">implements</span> <span class="title">Action</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Running</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"It's Running!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Sleeping</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"It's Sleeping!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="关联"><a href="#关联" class="headerlink" title=" 关联"></a><i class="fa fa-angle-right"></i> 关联</h3><blockquote>
+<p><code>【关联关系】</code>：是一种拥有的关系，它使一个类知道另一个类的属性和方法；<br>如：老师与学生，丈夫与妻子关联可以是双向的，也可以是单向的。<br>双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。<br><br><code>【代码体现】</code>：成员变量</p>
+</blockquote>
+<div class="image-display">
+    <img src="./association.png" alt="关联">
+    <br>关联
+</div>
+
+<br>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义学院类 College</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">College</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;Student&gt; student; <span class="comment">// 学生与学院 n : 1</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Courses</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.student = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 省略 getter 和 setter 方法...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义学生类 Students</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;Teacher&gt; teachers; <span class="comment">// 学生与老师 n : m</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.teachers = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 省略 getter 和 setter 方法...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义教师类 Teacher</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;Student&gt; students; <span class="comment">// 学生与老师 n : m</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Teacher</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.students = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 省略 getter 和 setter 方法...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="聚合"><a href="#聚合" class="headerlink" title=" 聚合"></a><i class="fa fa-angle-right"></i> 聚合</h3><blockquote>
+<p><code>【聚合关系】</code>：是整体与部分的关系，且<span class="markbutton bgblue">部分可以离开整体而单独存在</span>。如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。<br><br><span class="markbutton bgblue">聚合关系是关联关系的一种，是强的关联关系；</span> 关联和聚合在语法上无法区分，必须考察具体的逻辑关系。<br><br><code>【代码体现】</code>：成员变量</p>
+</blockquote>
+<div class="image-display">
+    <img src="./aggregation.png" alt="聚合">
+    <br>聚合
+</div>
+
+<br>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义引擎类 Engine</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Engine</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Engine</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义汽车类 Car</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Engine engine; <span class="comment">// 1:1 聚合关系</span></span><br><span class="line">    <span class="keyword">private</span> Tyre[] tyres = <span class="keyword">new</span> Tyre[<span class="number">4</span>]; <span class="comment">// 1:4 聚合关系</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Car</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        engine = <span class="keyword">new</span> Engine(<span class="string">"Engine"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Engine <span class="title">getEngine</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> engine;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> Tyre[] getTyres() &#123;</span><br><span class="line">        <span class="keyword">return</span> tyres;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义轮胎类 Tyre</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tyre</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">running</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Tyre is running..."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="组合-1"><a href="#组合-1" class="headerlink" title=" 组合"></a><i class="fa fa-angle-right"></i> 组合</h3><blockquote>
+<p><code>【组合关系】</code>：是整体与部分的关系，但<span class="markbutton bgblue">部分不能离开整体而单独存在</span>。如公司和部门是整体和部分的关系，没有公司就不存在部门。<br><br>组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期。<br><br><code>【代码体现】</code>：成员变量<br><br><code>【箭头及指向】</code>：带实心菱形的实线，菱形指向整体</p>
+</blockquote>
+<div class="image-display">
+    <img src="./composition.png" alt="组合">
+    <br>组合
+</div>
+
+<br>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义公司类 Company</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Company</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Company</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义部门类 Department</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Department</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Company company;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Department</span><span class="params">(Company company)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.company = company;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="依赖"><a href="#依赖" class="headerlink" title=" 依赖"></a><i class="fa fa-angle-right"></i> 依赖</h3><blockquote>
+<p><code>【依赖关系】</code>：是一种使用的关系，即<span class="markbutton bgblue">一个类的实现需要另一个类的协助</span>，所以要尽量不使用双向的互相依赖.<br><br><code>【代码表现】</code>：局部变量、方法的参数或者对静态方法的调用<br><br><code>【箭头及指向】</code>：带箭头的虚线，指向被使用者</p>
+</blockquote>
+<div class="image-display">
+    <img src="./dependency.png" alt="依赖">
+    <br>依赖
+</div>
+
+<br>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义计算机类 Computer</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Computer</span> &#123;</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String cpu = <span class="string">"Intel"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Computer</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">showCPU</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cpu;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义人类 People</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">People</span> &#123;</span></span><br><span class="line">    <span class="comment">// 使用局部方法参数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getComputerName</span><span class="params">(Computer computer)</span> </span>&#123;</span><br><span class="line">        System.out.println(computer.getName());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用静态方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getComputerCPU</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(Computer.showCPU());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="类图应用"><a href="#类图应用" class="headerlink" title=" 类图应用"></a><i class="fa fa-angle-right"></i> 类图应用</h3><div class="image-display">
+    <img src="./group.png" alt="类图应用">
+    <br>类图应用
+</div>
+
+<br>
+
+<p>使用<span class="markbutton bgblue">类图</span> 进行建模时，需要<span class="markbutton bgred">注意如下事项</span>：</p>
+<ol>
+    <li>类图可以呈现域、方法和类关系等代码要素，但无法表达详细业务流程。因此，如果只有类图模型，则并不能直接进行程序实现；</li>
+    <li>类图文档通常与代码实现不一致，且更新代价较高；</li>
+    <li>从静态代码形式上看，不同的类关系代码形式常常相同或类似。因此，一般按系统对象的角色或业务职责区分类关系。</li>
+</ol>
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 <i class="fa fa-paw"></i> Euphoria 在此感谢您的阅读-------------</div>
+    
+</div>
+
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/08/28/UML图例详解/">UML图例详解</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Euphoria 的个人博客">Euphoria</a></p>
+  <p><span>发布时间:</span>2019年08月28日 - 16:13</p>
+  <p><span>最后更新:</span>2019年09月01日 - 15:03</p>
+  <p><span>原始链接:</span><a href="/2019/08/28/UML图例详解/" title="UML图例详解">http://www.wqh4u.cn/2019/08/28/UML图例详解/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wqh4u.cn/2019/08/28/UML图例详解/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+
+      
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持将鼓励 Euphoria 继续创作！（如果你还是学生请千万不要打赏，留点钱在学习上啊！）</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.png" alt="Euphoria 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="Euphoria 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
+          
+            <a href="/tags/UML/" rel="tag"><i class="fa fa-tag"></i> UML</a>
+          
+            <a href="/tags/软件工程/" rel="tag"><i class="fa fa-tag"></i> 软件工程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/26/Oracle数据库实用教程-第一章/" rel="next" title="Oracle数据库实用教程_第一章">
+                <i class="fa fa-chevron-left"></i> Oracle数据库实用教程_第一章
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/04/设置你喜欢的live2d看板娘/" rel="prev" title="设置你喜欢的live2d看板娘">
+                设置你喜欢的live2d看板娘 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="Euphoria">
+            
+              <p class="site-author-name" itemprop="name">Euphoria</p>
+              <p class="site-description motion-element" itemprop="description">我摸到了梦，也看到了光</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/EuphoriaCHN" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="euphoria.wqh@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/weixin_41570565" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-globe"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML-图例详解"><span class="nav-number">1.</span> <span class="nav-text">UML 图例详解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用例图（UseCase-Diagrams）"><span class="nav-number">1.1.</span> <span class="nav-text">  用例图（UseCase Diagrams）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列图-时序图（Sequence-Diagrams）"><span class="nav-number">1.2.</span> <span class="nav-text">  序列图-时序图（Sequence Diagrams）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#生命线"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 生命线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同步消息"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 同步消息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异步消息"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 异步消息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释"><span class="nav-number">1.2.4.</span> <span class="nav-text"> 注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约束"><span class="nav-number">1.2.5.</span> <span class="nav-text"> 约束</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组合"><span class="nav-number">1.2.6.</span> <span class="nav-text"> 组合</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图（Class-Diagrams）"><span class="nav-number">1.3.</span> <span class="nav-text"> 类图（Class Diagrams）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泛化（继承）"><span class="nav-number">1.4.</span> <span class="nav-text"> 泛化（继承）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现"><span class="nav-number">1.5.</span> <span class="nav-text"> 实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联"><span class="nav-number">1.6.</span> <span class="nav-text"> 关联</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚合"><span class="nav-number">1.7.</span> <span class="nav-text"> 聚合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合-1"><span class="nav-number">1.8.</span> <span class="nav-text"> 组合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖"><span class="nav-number">1.9.</span> <span class="nav-text"> 依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图应用"><span class="nav-number">1.10.</span> <span class="nav-text"> 类图应用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Euphoria</span>
+
+  
+    
+    <br>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+     <span class="post-meta-item-text">博客全站共&#58;</span>
+    
+    <span title="Site words total count">
+    10.6k 字
+    </span>
+  
+</div>
+
+<!--
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共 10.6k 字</span>
+</div>
+-->
+
+<!--
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  <script src="/live2d-widget/autoload.js"></script>
+</body>
+</html>
